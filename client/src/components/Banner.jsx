@@ -44,7 +44,7 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <p className="text-red">499.00฿</p>
+              <p className="text-red-500">499.00฿</p>
             </div>
             <div className="bg-white px-3 py-2 rounded-2xl flex items-center gap-3 shadow-sm w-64">
               <img
@@ -83,18 +83,18 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <p className="text-red">300.00฿</p>
+              <p className="text-red-500">300.00฿</p>
             </div>
           </div>         
         </div>
         <div className="md:w-1/2 space-y-7 px-4">
           <h2 className="md:text-4xl text-4xl font-bold md:leading-snug ">
-            Discover Uniq <span className="text-red"> Software Swag </span>  for Every Coding Enthusiat!
+            Discover Uniq <span className="text-red-500"> Software Swag </span>  for Every Coding Enthusiat!
           </h2>
           <p className="text-xl text-[#AAAAAA">
             Our mission: To merge fashion with functionality in the worl of Software Engineering
           </p>
-          <button className="btn bg-red px-8 py-3 font-semibold text-white rounded-full">
+          <button className="btn bg-red-500 px-8 py-3 font-semibold text-white rounded-full">
             Order Now
           </button>
         </div>

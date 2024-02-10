@@ -6,10 +6,10 @@ const Testimonials = () => {
       <div className="py-24 flex flex-col md:flex-row-reverse justify-between items-center gap-12">
         <div className="md:w-1/2 space-y-7 px-4">
           <div className="text-left md:wd:w-4/5">
-            <p className="text-red subtitle"> TESTIMONIALS </p>
+            <p className="text-red-500 subtitle"> TESTIMONIALS </p>
           </div>
           <h2 className="title">What Our Customers Say About Us</h2>
-          <blockquote className="my-5 text-blue leading-[30px]">
+          <blockquote className="my-5 text-blue-500 leading-[30px]">
             "As a software developer, I'm always on the lookout for unique
             accessories to express my love for coding.The Keyboard Key Keychain
             is not only stylish but also durable. Will definitely be purchasing
@@ -39,13 +39,13 @@ const Testimonials = () => {
               </div>
             </div>
             <div className="space-y-1">
-              <h5 className="text-lg font-semibold"> Customer Feedback</h5>
+              <h5 className="text-lg font-semibold text-sky-500"> Customer Feedback</h5>
               <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-6 h-6 text-yellow"
+                  className="w-6 h-6 text-yellow-500"
                 >
                   <path
                     fillRule="evenodd"

@@ -8,7 +8,7 @@ import Card from '../../components/Card';
 const SampleNextArrow = (props) => {
   const {className , style , onClick} = props
   return(
-    <div className={className} style={{...style, display:"block" , background:"red"}} onClick={onClick}>
+    <div className={className} style={{...style, display:"block" , background:"red-500"}} onClick={onClick}>
       NEXT
     </div>
   )
@@ -77,13 +77,13 @@ const SpecialProduct = () => {
         <h2 className='title' > Standout item From Our Products</h2>
       </div>
       <div className="md:absolute right-3 top-8 mb-10 md:mr-24">
-        <button className=' brn bg-red p-2 rounded-full ml-5 text-white' onClick={()=> slider?.current?.slickPrev()}>
+        <button className=' brn bg-red-500 p-2 rounded-full ml-5 text-white' onClick={()=> slider?.current?.slickPrev()}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
 </svg>
 
         </button>
-        <button className=' brn bg-red p-2 rounded-full ml-5 text-white' onClick={()=> slider?.current?.slickNext()}>
+        <button className=' brn bg-red-500 p-2 rounded-full ml-5 text-white' onClick={()=> slider?.current?.slickNext()}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
 </svg>

@@ -113,7 +113,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-            <a className="btn bg-red rounded-full px-5 text-white flex items-center gap-2">
+            <a className="btn bg-red-500 rounded-full px-5 text-white flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

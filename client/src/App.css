@@ -10,7 +10,7 @@ header,nav{
 }
 
 .subtitle{
-  @apply text-red uppercase tracking-wide font-semibold text-lg
+  @apply text-red-600 uppercase tracking-wide font-semibold text-lg
 }
 .title{
   @apply text-4xl md:text-5xl md:leading-snug font-bold my-2

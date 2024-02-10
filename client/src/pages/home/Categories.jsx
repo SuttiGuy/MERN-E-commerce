@@ -41,12 +41,12 @@ const Categories = () => {
                   <img
                     src={item.image} // Fixed interpolation
                     alt=""
-                    className="bg-red p-2 rounded-full w-28 h-28"
+                    className="bg-red-500 p-2 rounded-full w-28 h-28"
                   />
                 </div>
                 <div className="mt-5 space-y-1">
                   <h5 className="text-[#1E1E1E] font-semibold">{item.title}</h5>
-                  <p className="text-secondary text-sm">{item.description}</p>
+                  <p className="text-blue-400 text-sm">{item.description}</p>
                 </div>
               </div>
             ))
