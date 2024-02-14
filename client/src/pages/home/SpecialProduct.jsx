@@ -16,7 +16,7 @@ const SampleNextArrow = (props) => {
 const SamplePrevArrow = (props) => {
   const {className , style , onClick} = props
   return(
-    <div className={className} style={{...style, display:"block" , background:"green"}} onClick={onClick}>
+    <div className={className} style={{...style, display:"block" , background:"green-500"}} onClick={onClick}>
       BACK
     </div>
   )
