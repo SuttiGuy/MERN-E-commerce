@@ -46,5 +46,78 @@
       "price": 1366.00,
       "image": "https://www.central.co.th/adobe/dynamicmedia/deliver/dm-aid--c8cd27db-f6fd-4de0-969c-2bdfd7692f0f/casio-unisexswatchesmodelmtp-vd01d-2bvudfblue-mkp1514914-1.jpg?quality=85&preferwebp=true&width=550",
       "category": "popular"
+    },
+    {
+      "_id": "8",
+      "name": "Student Backpack",
+      "description": "A durable backpack with multiple compartments, perfect for students.",
+      "price": 29.99,
+      "image": "https://sheepola.sgp1.digitaloceanspaces.com/static/imgs/product/3AKo66R6C2Z2E6zD7GsuI0Zi3QO3Up.jpg",
+      "category": "Bags"
+    },
+    {
+      "_id": "9",
+      "name": "Wireless Mouse",
+      "description": "A sleek and ergonomic wireless mouse for comfortable computing.",
+      "price": 14.99,
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREhUQEA4QDw8QEBASDw8WDxAQERAQFRIWFhUVFhUYHSggGBolHRUTITEhJSkrLi4uFyAzODMsNygtLisBCgoKDg0OGxAQGi0iICYrNi8tLS0tKy0rLTUtLTUrLTUtLjUtLS02Ky0tLi0vLS8tLy0tLS0tNy0tLS0rLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAwIEBQYHCAH/xABJEAACAgACBQcIBgcECwAAAAAAAQIDBBEFEiExQQYHE1FhcYEiMlKRobHB0SNCcoKSsiRDYnOiwvAUM5PhFRc0U1RjZHSjs9L/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAwQFAgEG/8QAMxEBAAIBAwIDBQYGAwAAAAAAAAECAwQRMRIhQVFxBSIyYaETIzOBkfAUYrHB0eEVQlL/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFljtLYenZbfCEvR1s55fZW1+oDGy5WUP8Au4W2L0lGMV/E0/YBS+VUMl9DNvbrRUo5xWzJ7dm3bx4Hu07bvN432V18rcNus6SrPdrQ1l64Nnj1lsHjqrVnVbCxLfqyUsu9LcBcAAAAAAAAAAAAAAAAAAAAAAAAADA8p+VeHwKynnZdJZwoi1rNelJ/Vj2+pMDnekeWeLxLadnQ1vdXW3HZ2z85+tLsAsKbAM9o1+Qu9+8C3wsP0q+XXThV6nd8wGlHu8fgBine4tSi3GS3STcZLtTW1AZnRfLzE0NK3LE18VJ5WJdk+Pjn3oDo2g9NUYyvpKJ5pbJweydcuqS4e58AMiAAAAAAAAAAAAAAAAAAAAABj+UGlYYTDW4mazVUHJRzy1pbox8ZNLxA8/342y+crrpa9tsnKcu18F1JbElwSSA+wtyAyWFtA2DD4qFdWvZONcI5uU5SUYrbxbAxOF5U4F4i1/2ylKcKIxblkm46+e17OKAyelZpqLTzW1pramsltAwOJtAspWZgXugNPSwOIhiE30aajfBfXpb8rZxa3rtXawO+Qmmk0000mmtzT3MCoAAAAAAAAAAAAAAAAAAAAHNee7SOrRh8Knk77nZNdddMdz+/Ot/dA5nUtgHyUsgLzC27PFe8CbSlEL8RhqbVr1RjiLXW/NlNOuMXJcclKXrLmix1vk96N9oVdXe1cfuzt3bNi9G0yq1JVQlDLzXX5PyRqb7ztPDM6ZjvE92t6F8jDzqTbhTfiIVptvVrTTjHN9WZi6ikUy2rHm2MNptji0+S3xVvuIUqCDApxS8lgdq5sdIdPo2ht5ypjKiW3N/RScI59uqoPxA2oAAAAAAAAAAAAAAAAAAAAHDeeHG9JpKNWfk4fDVrLqnOUpS9nRga9XuAgvYElE9324fmQF3iLssXVL0ablvy3yqfwNL2bXfJafkp674I9WanpHZw/wAdv2GrFO/+mbv2YTRtvkX/AL+5+uMTC1kbZ7NfTfhVW109i7kVU6qkD7iNwG/8xeOzhi8NntrtquS7LIuDy8avaB1MAAAAAAAAAAAAAAAAAAAAHmvlli+l0rjJ55pYh1rs6KMamvXBgfKnsAgxAHyD837cPzICvSDavjPfGMJRlxa1tRp92xmh7OyVrkmJnmFbVUm1OyazHR1VlLfu2J5m11RHMs77P5KdG5xhbrbHOU5pcUmsln6s/E+d1V4vmtMcNbDXppESjk9i7kV0iWgD7iHsA2HmXxerpKyr6t2Esf367K3H2SmB3MAAAAAAAAAAAAAAAAAAAAHk5Yrpbrbs8+mvutz/AHlkp/EDL0z2AUWgGvN+3H3gfMRdla+6PuA+V4r6SxZ7oVcevX+R1M71iHkR33TYe3PX+z8zl6+RXkruQElTAjxMtgF3zb4l16Ywu3ZOV1cu1Sosy9qiB6PAAAAAAAAAAAAAAAAAAAC00viOiott/wB3TbP8MG/gB5M0ZsjFdSXuAzdMwJltAqb293vAx2Ms+kb7I/lkBFG3y5/Zj7NcC7wFm2Xh75AX0Nq2AfM8gLbEzAj5NYro9IYSzqxmHXhKxRf5hA9TAAAAAAAAAAAAAAAAAAABr3OFfqaNxkv+ltj+KOr8TqnLy3DzBhmcvWUqtS3vLs4gTf21fVXiwPitAtMVLynt4Lj+zLtAg1/Klt4Lj+87QLvCzycvn+1LtAuFe1tTAkeOi/OWT61tQFtiLE1mmmgMdC7Vsrn6Ftc/wzT+B1T4o9XluJeuoSzSfBpP1nPD1UAAAAAAAAAAAAAAAAAANM53rtXRd69PUj/FrfykuKOfSf6OL+HrDzZCRE7TwkBPCYE0ZgR2y2/59j7QIIy8uW3hHj9vtAuap7/6+tLtAqdgEM5gQTmBBKWbXevedV+KHk8PW+gL+kwtE/Tw9MvFwR1mjpyWj5y8pO9YlfkboAAAAAAAAAAAAAAAAAOfc9luWAUc/Osby61GuXxaLOnj3bz/ACyiyz3r6vO8WVkqWDAmjICSMgEpf14AQxfly7o/zATRl/XiwPjmBHKQEUmBHntXeveexy8nh6p5BXa+Aw76q3H8E5R/lJ9XG2a3qjwTvjhnyulAAAAAAAAAAAAAAAAADmnPdP6CuPXHEP1Rgviy5po+7yeiDNPvV9Xn9Mpp0kWBJFgSJgVAUKt6zee9JerP5gVMCiUgKJSAjkwKYb13r3nVfih5PD1BzZTzwFa9Gdy/8jl/MWddH38/vwQ6f8OG1FROAAAAAAAAAAAAAAAAAHMeejaqo/8AJxPt1Pl7TQ0Ub48kfL+0quedrVcBM9aVJgSRAmiBLFAfcgKJICGYETYFDYFWFWdkF1zj+ZHeKN8lY+cf1c3nas+j0vzVP9CezdfZ4+TF/Eta/wDGRab4G5FJOAAAAAAAAAAAAAAAAAHNOd2Oc6F112r+KJqezo3i0Kmq8Hn+ayZl7bdlsQEsALitAXEIgVOAEU4gW1iAgkBG2BcaKjndD7Wfq2/AsaWN81fVHmnbHL0jzUL9Cl/3Fn5IEuv/ABfycaf4G6FJOAAAAAAAAAAAAAAAAAHOudyH+zvsvX/rZpezp72/JV1UdocB0nXq2zX7cvU3milnr05bR80+Od6RK2iRO09aAvKogXUIgVyiBb2RAtLUBazAiYGR5PV525+jGT+HxLvs+u+bfyif8K+pn3Ho/muhlgYv0rbX6nq/A51s/ey6wfA24qJgAAAAAAAAAAAAAAAAA0nnVozw9c/QuyfdKEvikXdDO15j5INRHuuAco6crNb0op+K2P4Huvptk6vOHmmnem3kxKKKwuKgL2lAZx0RcIzlnqxqhmo5ZtuUst/cX746Tjre/EVjjnvMqlb2i01rzMzyWYSCTm3J15QcUktfyt2fBbjidPSsdczPTtG3n3+jqMtpnpiI37+nZDjqFGp6rlqydcsmo57VLs2bjvNirTD7sztO099vGJeY7zbJ35jdgrigtLOwCFgZ/kzT50utqK8Nr96NX2dXatr/AJKepneYh6Q5BYfo8BQnvlCU/Cycpr2SRR1M75bSsYo2pDYCBIAAAAAAAAAAAAAAAAAGD5bYPpcFdFLNxirI/cak/YmTae3TkiXGSN6y8/cosLrQ1lvg8/Dj8H4GnrMfXi38Y/cqmC3TfbzapqmMvJqgLypgZGnFzWWUt0dXcstXqy4k1c+SvE+G35I5xUnmFzTi/OcpuMpZeVlrLJcHElxZ+8ze0xM+PP0R3xdoisbx5cfVZaQxOs2lJuLybbyzlJLLPs7jjPm6pmKzO3z8Z8/9O8WPpjeY7sVcyulWkwI4xzYG6aGwTShVFZzeUUuucn82b9K/Y4or5c/3Z0z13mXpLBYdVVwqj5tcIQXdGKS9xgzO8zLQiNoTnj0AAAAAAAAAAAAAAAAAKZwTTTWaaaa6094HBtP6NdNtlElsrnKKz+tD6r8U16zewXi9YnzZ2SvTLn+kcK65uPDfF9a4GPnxfZXmv6L2O/XXdBAhdrmuQE8JgVuwC3smBa2MC3kgMhoTCa09ZryYbfvcPmXdDi679U8Qgz32rt5un83Gi+mxkG1nClO6XfHZBfiafgy3rcm1J+aHBXeztRjroAAAAAAAAAAAAAAAAAAAHPec7Q/m4uEc91d3Z6En7vUX9Fl29yVbPTxcq0xgOkjs8+Pm9vWi5qMH21O3McIcWTonvw1dwaeT2Nb0YsxMTtK/E7qos8EikAcwI5SAhkB9poc5KMVm3/WZ3jpa9umrm1orG8tqwGEUIqK4b31vizcx44xU6YULWm9t5dr5t9C/2fDdLOOrbicptPfGvLyI+pt/eMnVZOu+0cQuYq7VbaVkoAAAAAAAAAAAAAAAAAAAEOLw0LYSrsjrQnFxkutM9iZrO8PJjftLjPKXQM8Ja65ZuDzdVnCcPmuKNrBmjJXdQyY5rLUtJaLU9q8mfXwfee59LXN3jtP75MeaadvBgr8LOGyUWu3g/EyMuC+L4o/wu0yVvxKHIidjApaAnw2AnZuWUfSexeHWWcOlyZOI2jzlFfNWjO4HARrWS2t75cX/AJGtiw0wxtX9VO+SbzvLeuQfJZ4qxW2x/RqpZvP9bNboLs6/Vx2VtVqOiOmOUuHHvO88OwIyVwAAAAAAAAAAAAAAAAAAAAAAstLaMqxNbqtjrRe1PdKEuEovgzumS1J3q5tWLRtLlnKPklfhm5ZdLTwtity/bX1fca2DVVv24lSyYpr6NYso7My5ug2WVui6n9RLuzXuIbaXDbmv6dncZskeKH/Q1XVL8Rx/A4PL6uv4nImq0dXHdBZ9b2v2ktMGKnFXFst7cyuo0ks2cxDdOS/IS25qzEqVNO/U3W2Lu+qu17feZ2o1kV7U7ytY8Mz3l1HDYeFcI11xUIQWUYpZJIy5mZneVuI2Snj0AAAAAAAAAAAAAAAAAAAAAAAGgMBpPkfg7226uim98q3qfw+b7Cxj1WSnjv6orYaW8GvYnm1X6vFZLqlVm/WmvcWq+0J8aoZ0vlKD/VpZ/wAXD/Cl/wDR1/yEf+fq8/hZ811hObWtf3uKnLshXGHtbZxb2hb/AK1dRpo8ZbNonk1hMNk6qVrr9ZLy5+De7wyKmTPkyfFKauOteIZchSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "10",
+      "name": "Portable External Hard Drive",
+      "description": "A compact and reliable external hard drive for data storage and backup.",
+      "price": 69.99,
+      "image": "data:image/jpeg;base64,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",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "11",
+      "name": "Mechanical Gaming Keyboard",
+      "description": "A high-performance mechanical keyboard designed for gaming enthusiasts.",
+      "price": 99.99,
+      "image": "https://itrinitydell.com/wp-content/uploads/aw410k_xkb_td_gy.jpg",
+      "category": "Computer Accessories"
+    },
+
+    {
+      "_id": "12",
+      "name": "Wireless Gaming Headset",
+      "description": "Immersive wireless headset with surround sound for an enhanced gaming experience.",
+      "price": 79.99,
+      "image": "https://storage.googleapis.com/file-computeandmore/large_images/d691a175-1ac2-4501-a82e-5fa011a1f727.JPG",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "13",
+      "name": "Laptop Cooling Pad",
+      "description": "An efficient cooling pad to prevent overheating during intense laptop use.",
+      "price": 24.99,
+      "image": "https://m.media-amazon.com/images/I/71KjnkHa8DL.jpg",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "16",
+      "name": "HD Webcam",
+      "description": "High-definition webcam for crystal-clear video calls and streaming.",
+      "price": 49.99,
+      "image": "https://play-lh.googleusercontent.com/QxpQbQUOn2XuaGDhwqyPP7XLWDxAWlNBX5uYZkRPTX6HC-oUR2jpkJ57Ia4lZzy_TUu2",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "17",
+      "name": "USB-C Hub Adapter",
+      "description": "Versatile USB-C hub adapter for expanding connectivity options on your device.",
+      "price": 29.99,
+      "image": "https://m.media-amazon.com/images/I/61S7Asj36AL._AC_SL1500_.jpg",
+      "category": "Computer Accessories"
+    },
+    {
+      "_id": "18",
+      "name": "Wireless Charging Mouse Pad",
+      "description": "Multi-functional mouse pad with built-in wireless charging capability.",
+      "price": 34.99,
+      "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/accessories/wireless-charging-mouse-pad-gt/img/pc/huawei-wireless-charging-mouse-pad-gt-kv.png",
+      "category": "Computer Accessories"
     }
   ]

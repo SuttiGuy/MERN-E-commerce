@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-       <div className="section-container md:m-12 ">
+       <div className="section-container md:m-auto ">
         <footer className="footer p-auto bg-white text-semibold">
           <nav className="text-gray-500">
             <img src="/logo.png" alt="" className='h-12 pr-1' />

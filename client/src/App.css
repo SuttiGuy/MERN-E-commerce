@@ -8,6 +8,9 @@ body {
 header,nav{
     z-index:1001 !important;
 }
+header,heart{
+  z-index:1000 !important;
+}
 
 .subtitle{
   @apply text-red-600 uppercase tracking-wide font-semibold text-lg
@@ -16,3 +19,8 @@ header,nav{
   @apply text-4xl md:text-5xl md:leading-snug font-bold my-2
 }
 
+.active{
+  text-decoration:underline;
+  text-underline-offset: 5px;
+  @apply: text-red-600
+}
