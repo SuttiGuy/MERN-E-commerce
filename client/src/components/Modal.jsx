@@ -13,7 +13,7 @@ const Modal = ({ name }) => {
     formState: { errors },
   } = useForm();
 
-  const { login } = useContext(AuthContext);
+  const { login,signUpWithGoogle } = useContext(AuthContext);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -27,6 +27,18 @@ const Modal = ({ name }) => {
         console.log(error);
       });
   };
+
+    const googleSignUp = () => {
+        signUpWithGoogle()
+        .then((result) => {
+            const user = result.user;
+            console.log(user);
+            alert("Login Google Successful");
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+    };
 
   return (
     <dialog id={name} className="modal">
@@ -95,7 +107,7 @@ const Modal = ({ name }) => {
           </button>
         </form>
         <div className="text-center space-x-3 mb-5 ">
-          <button className="btn btn-ghost btn-circle hover:bg-red-700 hover:text-white ">
+          <button className="btn btn-ghost btn-circle hover:bg-red-700 hover:text-white " onClick={googleSignUp}>
             <SiGmail />
           </button>
           <button className="btn btn-ghost btn-circle hover:bg-red-700 hover:text-white ">
