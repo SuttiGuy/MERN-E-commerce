@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation,useNavigate } from "react-router-dom";
 import { SiGmail } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -14,13 +14,19 @@ const Modal = ({ name }) => {
   } = useForm();
 
   const { login,signUpWithGoogle } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location?.state?.pathname || "/";
 
   const onSubmit = (data) => {
     console.log(data);
     login(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
+        document.getElementById(name).close();
+        navigate(from, { replace: true });
         alert("Login Successful");
       })
       .catch((error) => {

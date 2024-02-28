@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/Footer";
 
 const servicelist = [
   {
@@ -59,7 +58,6 @@ const OurServices = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Modal from "./Modal";
 import { AuthContext } from "../context/AuthProvider";
+import Profile from "./Profile";
 
 const Navbar = () => {
   const {user} = useContext(AuthContext);
@@ -15,7 +16,7 @@ const Navbar = () => {
           <summary>Category</summary>
           <ul className="p-2">
             <li>
-              <a>All</a>
+              <a href="/shop">All</a>
             </li>
             <li>
               <a>Clothing</a>
@@ -133,8 +134,7 @@ const Navbar = () => {
                 <span className="badge badge-sm indicator-item">8</span>
               </div>
             </div>
-
-            <button className="btn bg-red-500 rounded-full px-5 text-white flex items-center gap-2"
+            {user ? (<><Profile user={user}/></>) :  <button className="btn bg-red-500 rounded-full px-5 text-white flex items-center gap-2"
             onClick={()=>document.getElementById("login").showModal()}
             >
               <svg
@@ -150,7 +150,9 @@ const Navbar = () => {
                 />
               </svg>
               LogIn
-            </button>
+            </button> }
+
+           
           </div>
           <Modal name="login" />
         </div>
