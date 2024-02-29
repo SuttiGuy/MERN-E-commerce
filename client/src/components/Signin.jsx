@@ -27,7 +27,8 @@ const Signin = () => {
           .then((result) => {
             const user = result.user;
             // console.log(user);
-            navigate(from, { replace: true });
+
+            navigate(from, { replace:true });
             alert("Login Successful");
           })
           .catch((error) => {
@@ -41,6 +42,7 @@ const Signin = () => {
             const user = result.user;
             console.log(user);
             alert("Login Google Successful");
+            navigate(from, { replace: true });
           })
           .catch((error) => {
             console.log(error);
