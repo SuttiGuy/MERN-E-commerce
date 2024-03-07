@@ -3,6 +3,7 @@ const cors = require("cors")
 const dotenv = require("dotenv")
 const mongoose = require("mongoose");
 const ProductRouter = require("./routes/product.router")
+const CartItemRouter = require("./routes/cart.router")
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
@@ -32,10 +33,14 @@ const swaggerDefinition = {
       url: 'https://github.com/Suttiguy',
     },
   },
+  externalDocs: {
+    description:"Download Swagger.json",
+    url:"/swagger.json",
+  },
   servers: [
     {
-      url: 'http://localhost:3000',
-      description: 'Development server',
+      url: "http://localhost:4000/",
+      description: "Development server",
     },
   ],
 };
@@ -57,6 +62,12 @@ app.get("/", (req, res) => {
   res.send("<h1> Welcome to restful API Blog</h1>");
 });
 app.use("/products", ProductRouter)
+app.use("/carts", CartItemRouter)
+//Add Router
+app.get("/swagger.json", (req,res)=> {
+  res.header("Content-Type","application/json");
+  res.send(swaggerSpec);
+})
 
 const PORT = process.env.PORT;
 const server = app.listen(PORT, () => {

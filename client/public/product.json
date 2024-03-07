@@ -1,6 +1,6 @@
 [
     {
-      "_id": "1",
+      "_id": "65e0522ebadaf45630876948",
       "name": "Trendy T-Shirt",
       "description": "A stylish and comfortable t-shirt suitable for everyday wear.",
       "price": 19.99,
@@ -8,7 +8,7 @@
       "category": "popular"
     },
     {
-      "_id": "2",
+      "_id": "65e05297badaf45630879b98",
       "name": "Leather Wallet",
       "description": "A high-quality leather wallet with multiple compartments for cards and cash.",
       "price": 29.99,
