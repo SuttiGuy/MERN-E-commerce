@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React, { useContext, useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineDelete } from "react-icons/ai";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { AuthContext } from "../context/AuthProvider";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Model = ({ name, reload, totalQuantity, setTotalQuantity }) => {
   const { user, setReload } = useContext(AuthContext);
@@ -194,12 +193,12 @@ const Model = ({ name, reload, totalQuantity, setTotalQuantity }) => {
         {/* ปุ่ม Clear All และ Buy Now */}
         <div className="flex">
           <button
-            className="bg-red text-white px-6 py-2 rounded-lg ml-2 "
+            className="bg-red-600 text-white px-6 py-2 rounded-lg ml-2 "
             onClick={() => handleClearAll(user)}
           >
             Clear All
           </button>
-          <button className="bg-blue text-white px-4 py-2 rounded ml-[10px]">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded ml-[10px]">
             Buy Now
           </button>
         </div>
