@@ -8,6 +8,7 @@ import UpdateProfile from "../pages/dashboard/UpdateProfile";
 import PrivateRouter from "../pages/PrivateRouter/PrivateRouter";
 import Signin from "../components/signin";
 import Cart from "../pages/shop/Cart";
+import Admin from "../admin/admin";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path:"/signin",
     element:<Signin />
+  },
+  {
+    path:"/admin",
+    element:<Admin />
   }
 ]);
 
