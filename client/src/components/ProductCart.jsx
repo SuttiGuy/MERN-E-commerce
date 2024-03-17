@@ -102,25 +102,63 @@ const Model = ({ name, reload, totalQuantity, setTotalQuantity }) => {
   };
 
   const handleDelete = async (cartItem) => {
-    try {
-      await axios.delete(`http://localhost:4000/carts/${cartItem._id}`);
-      const total = totalQuantity - cartItem.quantity;
-      setTotalQuantity(total);
-      setReload(true);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+      cancelButtonText: "No, cancel"
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          await axios.delete(`http://localhost:4000/carts/${cartItem._id}`);
+          const total = totalQuantity - cartItem.quantity;
+          setTotalQuantity(total);
+          setReload(true);
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your file has been deleted.",
+            icon: "success"
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        // ถ้าผู้ใช้คลิก "No" หรือปิดกล่องข้อความคำเตือน
+        Swal.fire("Cancelled", "Your file is safe :)", "error");
+      }
+    });
+};
 
-  const handleClearAll = async (user) => {
-    try {
-      await axios.delete(`http://localhost:4000/carts/clear/${user.email}`);
-      setTotalQuantity(0);
-      setReload(true);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+const handleClearAll = async (user) => {
+  Swal.fire({
+      title: 'Are you sure?',
+      text: "This action will clear all items from your cart!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, clear it!'
+  }).then(async (result) => {
+      if (result.isConfirmed) {
+          try {
+              await axios.delete(`http://localhost:4000/carts/clear/${user.email}`);
+              setTotalQuantity(0);
+              setReload(true);
+              Swal.fire(
+                  'Cleared!',
+                  'Your cart has been cleared.',
+                  'success'
+              )
+          } catch (error) {
+              console.log(error);
+          }
+      }
+  })
+};
 
   return (
     <dialog id={name} className="modal">
@@ -190,8 +228,8 @@ const Model = ({ name, reload, totalQuantity, setTotalQuantity }) => {
           <p>PhoneNumber : 086-251-0754</p>
         </div>
 
-        {/* ปุ่ม Clear All และ Buy Now */}
-        <div className="flex">
+      {/* // ปุ่ม Clear All และ Buy Now  */}
+          <div className="flex">
           <button
             className="bg-red-600 text-white px-6 py-2 rounded-lg ml-2 "
             onClick={() => handleClearAll(user)}

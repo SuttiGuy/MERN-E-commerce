@@ -7,6 +7,7 @@ import Signup from "../components/Signup";
 import UpdateProfile from "../pages/dashboard/UpdateProfile";
 import PrivateRouter from "../pages/PrivateRouter/PrivateRouter";
 import Signin from "../components/signin";
+import Cart from "../pages/shop/Cart";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
         path:"/shop",
         element:<PrivateRouter>
           <ProductList />
+          </PrivateRouter>
+      },
+      {
+        path:"/cart",
+        element:<PrivateRouter>
+          <Cart />
           </PrivateRouter>
       },
       {

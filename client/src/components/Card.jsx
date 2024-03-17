@@ -3,10 +3,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../context/AuthProvider";
 import axios from "axios";
+import useCart from "../hook/useCart";
 
 const Card = ({ item }) => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [cart, refetch] = useCart();
   const location = useLocation();
   const { _id, name, image, price, description } = item;
   const [isHeartFilled, setIsHeartFilled] = useState(false);
@@ -24,17 +26,11 @@ const Card = ({ item }) => {
         image:image,
         quantity: 1,
       };
-      Swal.fire({
-        title: "Product added on the cart",
-        position: "center",
-        icon: "success",
-        showConfirmButton: false,
-        timer: "1500",
-      });
       console.log(cartItem);
       axios.post("http://localhost:4000/carts", cartItem)
         .then((response) => {
-          if (response.status === 200) {
+          if (response.status === 200 || response.status === 201) {
+            refetch();
             Swal.fire({
               title: "Product added on the cart",
               position: "center",

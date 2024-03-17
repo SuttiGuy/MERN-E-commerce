@@ -12,6 +12,10 @@ header,heart{
   z-index:1002 !important;
 }
 
+.my-swal {
+  z-index: X !important;
+}
+
 .subtitle{
   @apply text-red-600 uppercase tracking-wide font-semibold text-lg
 }
