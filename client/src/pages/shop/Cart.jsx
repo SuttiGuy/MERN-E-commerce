@@ -141,7 +141,7 @@ const Cart = () => {
                     <th className="px-4 py-2">Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   {/* items*/}
                   {cart.map((item, index) => (
                     <tr key={index}>
@@ -154,19 +154,19 @@ const Cart = () => {
                         />
                       </td>
                       <td className="px-4 py-2">{item.name}</td>
-                      <td className="px-4 py-2 flex justify-center space-x-2">
+                      <td className="px-4 py-2 ">
                         <button
                           className="btn btn-xs"
                           onClick={() => handleDecreaseQuantity(item)}
                         >
-                          -
+                         {" "} - {" "}
                         </button>
                         <span>{item.quantity}</span>
                         <button
                           className="btn btn-xs"
                           onClick={() => handleIncreaseQuantity(item)}
                         >
-                          +
+                        {""}  + {""}
                         </button>
                       </td>
                       <td className="px-4 py-2">{item.price}</td>
