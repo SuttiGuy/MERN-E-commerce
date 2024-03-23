@@ -1,12 +1,12 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import Dialog from "../components/Dialog";
+import Footer from '../components/Footer'
 
 const Admin = () => {
   return (
     <div>
       <Dialog />
-      <Outlet />
+      <Footer />
     </div>
   );
 };

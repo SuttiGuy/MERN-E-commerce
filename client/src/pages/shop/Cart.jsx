@@ -4,8 +4,10 @@ import useCart from "../../hook/useCart";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { AiOutlineDelete } from "react-icons/ai";
+import useAxiosPublic from "../../hook/useAxiosPublic";
 
 const Cart = () => {
+  const axiosPublic = useAxiosPublic();
   const { user } = useContext(AuthContext);
   const [cart, refetch] = useCart();
   const [totalQuantity, setTotalQuantity] = useState(0); // เพิ่ม state สำหรับจำนวนรวมของสินค้า
@@ -31,8 +33,8 @@ const Cart = () => {
     };
     try {
       if (cartItem.quantity !== 1) {
-        await axios.put(
-          `http://localhost:4000/carts/${cartItem._id}`,
+        await axiosPublic.put(
+          `/carts/${cartItem._id}`,
           cartObjects
         );
         refetch();
@@ -55,7 +57,7 @@ const Cart = () => {
       quantity: 1,
     };
     try {
-      await axios.post(`http://localhost:4000/carts`, cartObjects);
+      await axiosPublic.post(`/carts`, cartObjects);
       refetch();
     } catch (error) {
       console.log("error");
@@ -76,7 +78,7 @@ const Cart = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:4000/carts/${cartItem._id}`);
+          await axiosPublic.delete(`/carts/${cartItem._id}`);
           const total = totalQuantity - cartItem.quantity;
           setTotalQuantity(total);
           setReload(true);
@@ -108,7 +110,7 @@ const Cart = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:4000/carts/clear/${user.email}`);
+          await axiosPublic.delete(`/carts/clear/${user.email}`);
           setTotalQuantity(0);
           setReload(true);
           Swal.fire("Cleared!", "Your cart has been cleared.", "success");

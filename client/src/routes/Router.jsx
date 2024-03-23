@@ -9,6 +9,8 @@ import PrivateRouter from "../pages/PrivateRouter/PrivateRouter";
 import Signin from "../components/signin";
 import Cart from "../pages/shop/Cart";
 import Admin from "../admin/admin";
+import User from "../pages/dashboard/admin/User";
+import Dashboard from "../pages/dashboard/admin/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path:"/dashboard",
+    element: <PrivateRouter> <Admin /></PrivateRouter>,
+    children:[
+      {path:"users",element:<User />},
+      {path:"",element:<Dashboard/>}
+    ]
+  },
+  {
     path:"/signup",
     element:<Signup />
   },
@@ -45,10 +55,6 @@ const router = createBrowserRouter([
     path:"/signin",
     element:<Signin />
   },
-  {
-    path:"/admin",
-    element:<Admin />
-  }
 ]);
 
 export default router;

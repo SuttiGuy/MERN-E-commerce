@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SiGmail } from "react-icons/si";
-import { FaFacebookF } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebookF,FaGithub } from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import { AuthContext } from "../context/AuthProvider";
+import useAuth from "../hook/useAuth";
+import useAxiosPublic from "../hook/useAxiosPublic";
+import Swal from "sweetalert2";
 
 const Signin = () => {
  
@@ -14,22 +15,26 @@ const Signin = () => {
         watch,
         formState: { errors },
       } = useForm();
-    
-      const { login,signUpWithGoogle } = useContext(AuthContext);
+      
+      const{signUpWithGoogle,login} = useAuth();
+      const axiosPublic = useAxiosPublic();
       const location = useLocation();
       const navigate = useNavigate();
     
       const from = location?.state?.pathname || "/";
     
       const onSubmit = (data) => {
-        console.log(data);
         login(data.email, data.password)
           .then((result) => {
+            // Signed in
             const user = result.user;
             // console.log(user);
-
-            navigate(from, { replace:true });
-            alert("Login Successful");
+            Swal.fire({
+              title: "Account login Successfully",
+              icon: "success",
+              timer: 1500,
+            });
+            navigate(from, { replace: true });
           })
           .catch((error) => {
             console.log(error);
@@ -38,16 +43,29 @@ const Signin = () => {
 
       const googleSignUp = () => {
         signUpWithGoogle()
-        .then((result) => {
+          .then((result) => {
             const user = result.user;
-            console.log(user);
-            alert("Login Google Successful");
+            const userInfo = {
+              name: result.user?.displayName,
+              email: result.user?.email,
+              photoURL: result.user?.photoURL,
+            };
+            axiosPublic.post("/users", userInfo).then((response) => {
+              console.log(response);
+              console.log(user);
+              Swal.fire({
+                title: "SignUp google account successfully",
+                icon: "success",
+                timer: 1500,
+              });
+            });
             navigate(from, { replace: true });
+            // document.getElementById("login").close()
           })
           .catch((error) => {
             console.log(error);
           });
-    };
+      };
 
   return (
     <div>
@@ -99,7 +117,7 @@ const Signin = () => {
             </p>
             <button
               htmlfor={name}
-              className="btn btn-sm btn-cicle btn-ghost absolute right-2 top-2"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               onClick={() => document.getElementById(name).close()}
             ></button>
           </form>

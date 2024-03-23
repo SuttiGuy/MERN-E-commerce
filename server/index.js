@@ -6,9 +6,11 @@ const ProductRouter = require("./routes/product.router")
 const CartItemRouter = require("./routes/cart.router")
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-
+const UserRouter = require("./routes/user.router")
+const jwt = require('jsonwebtoken');
 
 require("dotenv").config();
+
 
 const app = express();
 const CLIENT_URL = process.env.CLIENT_URL
@@ -63,11 +65,23 @@ app.get("/", (req, res) => {
 });
 app.use("/products", ProductRouter)
 app.use("/carts", CartItemRouter)
+app.use("/users", UserRouter)
 //Add Router
 app.get("/swagger.json", (req,res)=> {
   res.header("Content-Type","application/json");
   res.send(swaggerSpec);
 })
+
+app.post("/jwt", async (req, res) => {
+  // สร้างและส่ง JWT
+  // {email,name}
+  const user = req.body;
+  const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+    expiresIn: "1h",
+  });
+  // ส่ง token กลับไปยังผู้ใช้งาน
+  res.send({ token });
+});
 
 const PORT = process.env.PORT;
 const server = app.listen(PORT, () => {

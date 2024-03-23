@@ -11,9 +11,11 @@ import {
   updateProfile,
   signOut,
 } from "firebase/auth";
+import useAxiosPublic from "../hook/useAxiosPublic";
 
 const AuthProvider = ({ children }) => {
   const auth = getAuth(app);
+  const axiosPublic = useAxiosPublic();
   const [user, setUser] = useState(null);
   const [reload, setReload] = useState(false);
 
@@ -58,7 +60,14 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        setUser(currentUser);
+        const userInfo = {email:currentUser.email};
+        axiosPublic.post("/jwt", userInfo).then((response)=>{
+          if(response.data.token){
+            localStorage.setItem("access_token",response.data.token);
+          }
+        })
+      }else{
+        localStorage.removeItem("access_token")
       }
     });
     return () => {
